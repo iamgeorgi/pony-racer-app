@@ -1,1 +1,1 @@
-{"pack":"80","id":0,"title":"Getting started","specs":[{"name":"src/app/app.spec.ts","hash":"8a9817f557bcb3ff30a3fc46d6d15efe247b1ee8a4920709ca538f68f3682f46"}]}
+{"pack":"80","id":2,"title":"Templates","specs":[{"name":"src/app/app.spec.ts","hash":"32406ef5ec3b9d539ecca84cf7a3c81a3ddca1077e2dc78a5c284fcfe58afda1"},{"name":"src/app/menu/menu.spec.ts","hash":"a07fdc0fa8da3d88961ef5ba4dec59ab28f9c74f42ea274d3cabd4da958dd169"}]}

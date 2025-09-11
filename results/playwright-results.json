@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -37,7 +37,7 @@
         "repeatEach": 1,
         "retries": 2,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "chromium",
         "name": "chromium",
@@ -86,12 +86,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 371,
+                      "duration": 476,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-11T07:24:12.749Z",
+                      "startTime": "2025-09-11T08:27:36.044Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -103,6 +103,74 @@
               "file": "home.e2e-spec.ts",
               "line": 8,
               "column": 7
+            },
+            {
+              "title": "should display a navbar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 501,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-11T08:27:36.023Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e2caf6f5f0104c3eaa7f-733d8a887446e4614b69",
+              "file": "home.e2e-spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "should display a navbar collapsed on small screen",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 777,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-11T08:27:36.050Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e2caf6f5f0104c3eaa7f-a08f4f97b3dc9706228d",
+              "file": "home.e2e-spec.ts",
+              "line": 17,
+              "column": 7
             }
           ]
         }
@@ -111,9 +179,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-11T07:24:11.934Z",
-    "duration": 2375.568,
-    "expected": 1,
+    "startTime": "2025-09-11T08:27:35.197Z",
+    "duration": 1903.9440000000002,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
