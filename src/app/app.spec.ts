@@ -1,23 +1,17 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixtureAutoDetect, TestBed } from '@angular/core/testing';
 import { App } from './app';
 
 describe('App', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [App],
-    }).compileComponents();
-  });
+  beforeEach(() =>
+    TestBed.configureTestingModule({
+      providers: [{ provide: ComponentFixtureAutoDetect, useValue: true }]
+    })
+  );
 
-  it('should create the app', () => {
+  it('should have a title', async () => {
     const fixture = TestBed.createComponent(App);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(App);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ponyracer');
+    await fixture.whenStable();
+    const element = fixture.nativeElement as HTMLElement;
+    expect(element.querySelector('h1')!.textContent).withContext('You should have an `h1` with the text Ponyracer').toContain('Ponyracer');
   });
 });

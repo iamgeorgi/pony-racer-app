@@ -10,6 +10,7 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
+    "noUnusedLocals": true,
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
@@ -20,7 +21,10 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "typeCheckHostBindings": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "extendedDiagnostics": {
+      "defaultCategory": "error"
+    }
   },
   "files": [],
   "references": [
