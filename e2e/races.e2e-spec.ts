@@ -7,5 +7,6 @@ test.describe('Races page', () => {
 
   test('should display a race list', async ({ page }) => {
     await expect(page.locator('h2')).toHaveCount(2);
+    await expect(page.locator('.container ul li')).toHaveCount(10);
   });
 });
