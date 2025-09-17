@@ -2,6 +2,7 @@ import { ComponentFixtureAutoDetect, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { App } from './app';
 import { Menu } from './menu/menu';
+import { Races } from './races/races';
 
 describe('App', () => {
   beforeEach(() =>
@@ -23,6 +24,15 @@ describe('App', () => {
     const element = fixture.debugElement;
     expect(element.query(By.directive(Menu)))
       .withContext('You probably forgot to add Menu to the App template')
+      .not.toBeNull();
+  });
+
+  it('should use the races component', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const element = fixture.debugElement;
+    expect(element.query(By.directive(Races)))
+      .withContext('You probably forgot to add Races to the App template')
       .not.toBeNull();
   });
 });

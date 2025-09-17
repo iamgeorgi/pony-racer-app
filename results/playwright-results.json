@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -37,7 +37,7 @@
         "repeatEach": 1,
         "retries": 2,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
         },
         "id": "chromium",
         "name": "chromium",
@@ -86,12 +86,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 476,
+                      "duration": 686,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-11T08:27:36.044Z",
+                      "startTime": "2025-09-11T17:24:18.160Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -120,12 +120,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 501,
+                      "duration": 671,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-11T08:27:36.023Z",
+                      "startTime": "2025-09-11T17:24:18.163Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -154,12 +154,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 777,
+                      "duration": 887,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-09-11T08:27:36.050Z",
+                      "startTime": "2025-09-11T17:24:18.172Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -175,13 +175,64 @@
           ]
         }
       ]
+    },
+    {
+      "title": "races.e2e-spec.ts",
+      "file": "races.e2e-spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Races page",
+          "file": "races.e2e-spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display a race list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 672,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-09-11T17:24:18.166Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d00a11b7894905e42f04-e41146bfc8539ce11a3a",
+              "file": "races.e2e-spec.ts",
+              "line": 8,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-11T08:27:35.197Z",
-    "duration": 1903.9440000000002,
-    "expected": 3,
+    "startTime": "2025-09-11T17:24:17.065Z",
+    "duration": 2697.624,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

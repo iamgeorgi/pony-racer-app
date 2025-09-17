@@ -1,0 +1,9 @@
+@if (races().length === 0) {
+  <h2>No races to come</h2>
+} @else {
+  @for (race of races(); track race.id) {
+    <div>
+      <h2>{{ race.name }}</h2>
+    </div>
+  }
+}
