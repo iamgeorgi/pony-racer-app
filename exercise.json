@@ -1,1 +1,1 @@
-{"pack":"80","id":5,"title":"Pony component","specs":[{"name":"src/app/race/race.spec.ts","hash":"d1702d993d6d67cd44b0b668b5de20f39ef73792a398fb55554554a20b841d0f"},{"name":"src/app/pony/pony.spec.ts","hash":"3848d1496a24489a8e8c1ffd60e32f7341513d48001a6abe17c6100cede27d12"}]}
+{"pack":"80","id":6,"title":"Using pipes","specs":[{"name":"src/app/race/race.spec.ts","hash":"bcedcfc009fe6a89bbacbfed4f8a1899fd0d7c2662697cacb60fed0c8304f76c"}]}
