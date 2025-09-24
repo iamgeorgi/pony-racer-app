@@ -9,6 +9,7 @@ test.describe('Races page', () => {
     await expect(page.locator('h2')).toHaveCount(2);
     const paragraphs = page.locator('p');
     await expect(paragraphs).toHaveCount(2);
+    await expect(paragraphs.first()).toContainText('ago');
   });
 
   test('should display ponies', async ({ page }) => {
